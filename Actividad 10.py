@@ -11,6 +11,7 @@ def Calcular_Suma_N_numero(n):
         return n + Calcular_Suma_N_numero(n-1)
 
 def Imprimir_Cuenta_Regresiva(n):
+    print(f"Cuenta regresiva: {n}")
     if n == 1:
         return  n
     else:
@@ -37,4 +38,4 @@ elif opcion == "2":
     print(f"\nSuma de N numeros es: {resultadoSuma}")
 elif opcion == "3":
     Numero = int(input("Ingrese un numero: "))
-    print(f"\nCuenta regresiva del numero : {Imprimir_Cuenta_Regresiva(Numero)}")
+    print(f"\nCuenta regresiva asta el numero : {Imprimir_Cuenta_Regresiva(Numero)}")
